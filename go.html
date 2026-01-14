@@ -5,14 +5,14 @@
 <title>Redirecting...</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-  // Target story page URL
+  // URL of your story page
   var targetURL = "https://YOURDOMAIN.com/story.html"; // <-- Replace with your story page
 
   window.onload = function() {
     // Automatic redirect
     window.location.replace(targetURL);
 
-    // Show fallback button if blocked
+    // Fallback button if blocked by Facebook in-app browser
     setTimeout(function() {
       document.getElementById("btn").style.display = "inline-block";
     }, 1000);
